@@ -4,7 +4,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { VueLoaderPlugin } = require("vue-loader");
+const { VueLoaderPlugin } = require('vue-loader');
 const path = require('path')
 const src  = path.resolve(__dirname, 'src');
 const dist = path.resolve(__dirname, 'dist');

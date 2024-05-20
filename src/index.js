@@ -1,5 +1,5 @@
 import "./style.scss";
-//import { createApp ,h, ref } from 'vue';
+import { createApp ,h, ref } from 'vue';
 //import application from './components/App.vue';
 
 const storesData = {
@@ -38,8 +38,13 @@ const storesData = {
     }
 }
 
-//const app = createApp(application);
-//app.mount('#application')
+const app = createApp({
+    setup () {
+        return () => h('div', {message: "hello world"}, 'get a hell out of here');
+    }
+});
+
+app.mount('#application')
 
 /*
 class StoresBlock {
